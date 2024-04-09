@@ -5,17 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4f8ffd15-64dc-4ceb-a8ff-b6581a437456" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sae_graphe.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/graphe/GraphImporter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/graphe/Graphe.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/graphe/GrapheLArcs.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/graphe/GrapheMAdj.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/graphe/IGraphe.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/graphe/IGrapheConst.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/graphe/IGrapheTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,7 +70,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1712681494391</updated>
-      <workItem from="1712681496070" duration="1747000" />
+      <workItem from="1712681496070" duration="3131000" />
     </task>
     <servers />
   </component>
