@@ -3,8 +3,11 @@ package main.java.graphe;
 import java.util.List;
 
 public class GrapheLArcs extends Graphe {
+   private Arc[] a;
+  private  List<Arc>ab;
+   public GrapheLArcs(){
 
-
+   }
     @Override
     public void ajouterSommet(String noeud) {
 
