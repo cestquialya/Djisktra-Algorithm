@@ -17,6 +17,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
+import main.java.graphe.Arc;
 import main.java.graphe.GraphImporter;
 import main.java.graphe.IGraphe;
 import org.junit.jupiter.api.Test;
