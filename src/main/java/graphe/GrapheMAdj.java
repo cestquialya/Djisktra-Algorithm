@@ -7,20 +7,20 @@ import java.util.List;
 import java.util.Map;
 
 public class GrapheMAdj extends Graphe {
-	private int[][] matrice;
+    private int[][] matrice;
     private Map<String, Integer> indices;
-    
+
     public GrapheMAdj() {
         matrice = new int[0][0];
         indices = new HashMap<>();
     }
 
     public GrapheMAdj(String str) {
-    	this();
-		this.peupler(str);
-	}
+        this();
+        this.peupler(str);
+    }
 
-	@Override
+    @Override
     public void ajouterSommet(String noeud) {
         if (!indices.containsKey(noeud)) {
             indices.put(noeud, indices.size());
@@ -34,24 +34,24 @@ public class GrapheMAdj extends Graphe {
         }
     }
 
-	public void ajouterArc(String source, String destination, Integer valeur) {
-		if (!indices.containsKey(source)) {
-	        ajouterSommet(source);
-	    }
-	    if (!indices.containsKey(destination)) {
-	        ajouterSommet(destination);
-	    }
-	    int indexSource = indices.get(source);
-	    int indexDestination = indices.get(destination);
+    public void ajouterArc(String source, String destination, Integer valeur) {
+        if (!indices.containsKey(source)) {
+            ajouterSommet(source);
+        }
+        if (!indices.containsKey(destination)) {
+            ajouterSommet(destination);
+        }
+        int indexSource = indices.get(source);
+        int indexDestination = indices.get(destination);
 
-	    if (matrice[indexSource][indexDestination] > 0) {
-	        throw new IllegalArgumentException("Un arc existe déjà entre les sommets : " + source + " et " + destination);
-	    }
-	    if (valeur < 0)
-	    	throw new IllegalArgumentException("Les valuations ne doivent pas etre negatives " + valeur);
+        if (matrice[indexSource][indexDestination] > 0) {
+            throw new IllegalArgumentException("Un arc existe déjà entre les sommets : " + source + " et " + destination);
+        }
+        if (valeur < 0)
+            throw new IllegalArgumentException("Les valuations ne doivent pas etre negatives " + valeur);
 
-	    matrice[indexSource][indexDestination] = valeur;
-	}
+        matrice[indexSource][indexDestination] = valeur;
+    }
 
 
     @Override
@@ -101,7 +101,7 @@ public class GrapheMAdj extends Graphe {
 
     @Override
     public List<String> getSommets() {
-    	List<String> vertices = new ArrayList<>(indices.keySet());
+        List<String> vertices = new ArrayList<>(indices.keySet());
         Collections.sort(vertices);
         return vertices;
     }
