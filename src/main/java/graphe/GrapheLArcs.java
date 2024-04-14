@@ -10,7 +10,10 @@ public class GrapheLArcs extends Graphe {
     a = new Arc[0];
     som = new ArrayList<>();
  }
-
+    public GrapheLArcs(String str) {
+        this();
+        this.peupler(str);
+    }
 
  @Override
  public void ajouterSommet(String noeud) {
@@ -33,7 +36,7 @@ public class GrapheLArcs extends Graphe {
         new_a[a.length+1] = new Arc(source , destination , valeur);
     }
     a = new_a;
-
+ //maybe trhow exepctions
  }
 
  @Override
