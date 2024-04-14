@@ -17,18 +17,20 @@ public class GrapheLArcs extends Graphe {
 
  @Override
  public void ajouterSommet(String noeud) {
-     if(!contientSommet(noeud)){
-         System.out.print("Ce noeud existe deja !");
-         return;
-         //faire peut etre un throw
+     if(contientSommet((noeud)))
+         throw new IllegalArgumentException("Le graphe contient déjà le sommet");
 
-    }
+
     som.add(noeud);
 
  }
 
  @Override
  public void ajouterArc(String source, String destination, Integer valeur) {
+     if(contientArc(source, destination))
+         throw new IllegalArgumentException("Un arc existe déjà entre les sommets : " + source + " et " + destination);
+     if(valeur < 0)
+         throw new IllegalArgumentException("La valuation " + valeur + "  est negative");
     Arc [] new_a = new Arc[a.length + 1];
     for(int i=0 ; i < a.length ; i++)
         new_a[i] = a[i];
@@ -36,30 +38,33 @@ public class GrapheLArcs extends Graphe {
         new_a[a.length+1] = new Arc(source , destination , valeur);
     }
     a = new_a;
- //maybe trhow exepctions
+
  }
 
  @Override
  public void oterSommet(String noeud) {
-     assert(contientSommet(noeud));
-     //faire throw au lieu d'assert
-     som.remove(noeud);
-     for(Arc ax : a)
-         if(ax.getSource().contentEquals(noeud))
-             ax = new Arc("0" , "0", 0);
-         else if(ax.getSource().contentEquals(noeud) || ax.getDestination().contentEquals(noeud))
-             ax = new Arc("0" , "0" , 0);
+
+     if (contientSommet(noeud)){
+         som.remove(noeud);
+         for(Arc ax : a)
+             if(ax.getSource().contentEquals(noeud))
+                 ax = new Arc("0" , "0", 0);
+             else if(ax.getSource().contentEquals(noeud) || ax.getDestination().contentEquals(noeud))
+                 ax = new Arc("0" , "0" , 0);
+     }
+
 
  }
 
  @Override
  public void oterArc(String source, String destination) {
-    assert(contientSommet(source) & contientSommet(destination));
-    //faire throw au lieu d'assert
-    for(Arc ax : a)
-         if(contientArc(source, destination))
-             ax = new Arc("0" , "0", 0);
 
+   if(contientSommet(source) && contientSommet(destination)) {
+       for (Arc ax : a)
+           if (contientArc(source, destination))
+               ax = new Arc("0", "0", 0);
+   }else
+       throw new IllegalArgumentException("L'Arc n'existe pas dans le graphe");
  }
 
  @Override
