@@ -7,8 +7,7 @@
     <list default="true" id="0d8dbf8b-28bf-4435-a135-08b04453df4c" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/graphe/Arc.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/graphe/Arc.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/graphe/GrapheLArcs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/graphe/GrapheLArcs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/graphe/GrapheLAdj.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/graphe/GrapheLAdj.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/graphe/IGrapheTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/graphe/IGrapheTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -16,15 +15,22 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "Nsrn17"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Nsrn17&quot;
   }
-}]]></component>
+}</component>
   <component name="GithubPullRequestsUISettings">
     <option name="selectedUrlAndAccountId">
       <UrlAndAccount>
@@ -36,7 +42,7 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "git-widget-placeholder": "Rebasing dev",
+    "git-widget-placeholder": "Merging dev",
     "node.js.selected.package.tslint": "(autodetect)"
   }
 }]]></component>

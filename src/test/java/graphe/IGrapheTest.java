@@ -21,6 +21,7 @@ import main.java.graphe.Arc;
 import main.java.graphe.GraphImporter;
 import main.java.graphe.GrapheLArcs;
 import main.java.graphe.GrapheMAdj;
+import main.java.graphe.GrapheLAdj;
 import main.java.graphe.IGraphe;
 import org.junit.jupiter.api.Test;
 
