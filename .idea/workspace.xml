@@ -4,14 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0d8dbf8b-28bf-4435-a135-08b04453df4c" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="37a2ad52-88cd-4786-b0c7-deca8e7d75b6" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-<<<<<<< HEAD
-=======
-      <change beforePath="$PROJECT_DIR$/src/main/java/graphe/GrapheLAdj.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/graphe/GrapheLAdj.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/graphe/IGrapheTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/graphe/IGrapheTest.java" afterDir="false" />
->>>>>>> c7533c42de26e91e032c3f3f6609c48726a543a1
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,9 +37,9 @@
       </UrlAndAccount>
     </option>
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 4
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
   <component name="ProjectId" id="2f6GJiyIBYaeCVvJO6w3F9gWpmo" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -53,20 +48,41 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-<<<<<<< HEAD
+    "JUnit.IGrapheTest.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "dev",
     "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
-=======
-    "git-widget-placeholder": "Merging dev",
-    "node.js.selected.package.tslint": "(autodetect)"
->>>>>>> c7533c42de26e91e032c3f3f6609c48726a543a1
   }
 }]]></component>
+  <component name="RunManager">
+    <configuration name="IGrapheTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Saejva" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.java.graphe.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test.java.graphe" />
+      <option name="MAIN_CLASS_NAME" value="test.java.graphe.IGrapheTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.IGrapheTest" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
