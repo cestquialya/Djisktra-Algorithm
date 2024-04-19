@@ -6,9 +6,12 @@ public class Arc {
     private String destination;
     private int valuation;
     public Arc(String s,String d,int v){
-        s=this.source;
-        d=this.destination;
-        v=this.valuation;
+        if(v<0){
+            throw new IllegalArgumentException();
+        }
+        this.source=s;
+        this.destination=d;
+        this.valuation=v;
 
     }
 
@@ -24,13 +27,7 @@ public class Arc {
         return valuation;
     }
 
-    @Override
-    public String toString() {
-        return  source +
-                "-" + destination +
-                "(" + valuation +")"
-               ;
-    }
+
 
 
 }

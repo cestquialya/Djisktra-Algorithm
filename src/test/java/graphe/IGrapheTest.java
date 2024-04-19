@@ -29,6 +29,8 @@ class IGrapheTest {
 	private final IGraphe[] graphes = {
 			new GrapheLArcs(), new GrapheLAdj(),
 			new GrapheMAdj(), //new GrapheHHAdj()
+
+
 	};
 
 	// graphe de l'exercice 3.1 du poly de maths
@@ -93,7 +95,7 @@ class IGrapheTest {
 				() -> g.ajouterArc("A", "B", -1)); // valuation negative
 	}
 
-	void petiteImporation(IGraphe g) {
+/*	void petiteImporation(IGraphe g) {
 		Arc a = GraphImporter.importer("graphes/orig/g-10-1.txt", g);
 		assertEquals("1-3(5), "
 						+ "10-3(3), 2-1(5), 2-3(5), 2-5(4), "
@@ -110,9 +112,15 @@ class IGrapheTest {
 		for (IGraphe g : graphes)
 			petiteImporation(g);
 	}
+<<<<<<< HEAD
 */
 	/* @Test
 	 void importer() throws NumberFormatException, FileNotFoundException {
+=======
+
+	//@Test
+	/*void importer() throws NumberFormatException, FileNotFoundException {
+>>>>>>> 37275f83145a42cb847a0e916e4d3d4866684bf2
 		String graphesRep = "graphes";
 		String reponsesRep = "reponses";
 		try {
@@ -180,5 +188,6 @@ class IGrapheTest {
 			System.out.println("Erreur lors de l'acces aux dossiers: " + e.getMessage());
 		}
 	}*/
+
 
 }
