@@ -42,7 +42,7 @@ public class GrapheLAdj extends Graphe{
     @Override
     public void oterSommet(String noeud) {
         if (liste_adj.containsKey(noeud)) {
-            // Supprimer tous les arcs ayant ce noeud comme destination
+
             for (List<Arc> ensembleArcs : liste_adj.values()) {
                 List<Arc> arcsASupprimer = new ArrayList<>();
                 for (Arc arc : ensembleArcs) {
@@ -53,7 +53,7 @@ public class GrapheLAdj extends Graphe{
                 ensembleArcs.removeAll(arcsASupprimer);
             }
 
-            // Supprimer l'entrée correspondante à ce noeud
+
             liste_adj.remove(noeud);
         }
     }
