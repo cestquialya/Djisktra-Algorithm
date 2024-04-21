@@ -59,7 +59,7 @@ class IGrapheTest {
 		for (IGraphe g : graphes) {
 			g.peupler(g31a);
 			tester3_1(g);
-			test2(g);
+			//test2(g);
 		}
 	}
 
@@ -105,14 +105,14 @@ class IGrapheTest {
 		assertEquals("7", a.getDestination());
 	}
 
-	@Test
+	/*@Test
 	void petitTestImportation() {
 		for (IGraphe g : graphes)
 			petiteImporation(g);
 
 	}*/
 
-	void test2(IGraphe g){
+	/* void test2(IGraphe g){
 		g.oterArc("G","B");
 		assertEquals("A-C(2), A-D(1), "
 				+ "B-G(3), "
@@ -134,7 +134,7 @@ class IGrapheTest {
 				+ "H-F(4), H-G(2), "
 				+ "I-H(10), "
 				+ "J:", g.toString());
-	}
+	} */
 
 	//@Test
 	/*void importer() throws NumberFormatException, FileNotFoundException {

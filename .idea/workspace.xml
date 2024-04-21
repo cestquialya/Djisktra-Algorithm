@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="37a2ad52-88cd-4786-b0c7-deca8e7d75b6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/graphe/GrapheMAdj2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/graphe/Arc.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/graphe/Arc.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/graphe/GrapheLAdj.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/graphe/GrapheLAdj.java" afterDir="false" />
@@ -45,35 +44,36 @@
   &quot;associatedIndex&quot;: 4
 }</component>
   <component name="ProjectId" id="2f6GJiyIBYaeCVvJO6w3F9gWpmo" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "JUnit.IGrapheTest.executor": "Run",
-    "JUnit.IGrapheTest.exo3_1Maths.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "Merging dev",
-    "kotlin-language-version-configured": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;JUnit.IGrapheTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.IGrapheTest.exo3_1Maths.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.IGrapheTest.petitTestImportation.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;dev&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
-<<<<<<< HEAD
-=======
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
->>>>>>> 0c7a5c2 (test2)
   <component name="RunManager" selected="JUnit.IGrapheTest">
     <configuration name="IGrapheTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Saejva" />
@@ -110,10 +110,6 @@
       <list>
         <item itemvalue="JUnit.IGrapheTest" />
         <item itemvalue="JUnit.IGrapheTest.exo3_1Maths" />
-<<<<<<< HEAD
-=======
-        <item itemvalue="JUnit.IGrapheTest.petitTestImportation" />
->>>>>>> 0c7a5c2 (test2)
       </list>
     </recent_temporary>
   </component>
@@ -133,14 +129,10 @@
       <option name="presentableId" value="Default" />
       <updated>1713114044278</updated>
       <workItem from="1713114046053" duration="193000" />
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
       <workItem from="1713551099185" duration="3449000" />
->>>>>>> c25fb23 (sae)
-=======
       <workItem from="1713551099185" duration="23490000" />
->>>>>>> 0c7a5c2 (test2)
+      <workItem from="1713551099185" duration="24524000" />
+      <workItem from="1713719034598" duration="597000" />
     </task>
     <servers />
   </component>
@@ -157,6 +149,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="LAST_COMMIT_MESSAGE" value="" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
