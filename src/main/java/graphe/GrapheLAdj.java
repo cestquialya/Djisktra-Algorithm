@@ -42,34 +42,43 @@ public class GrapheLAdj extends Graphe{
     @Override
     public void oterSommet(String noeud) {
         if (liste_adj.containsKey(noeud)) {
-            liste_adj.remove(noeud);
-
+            // Supprimer tous les arcs ayant ce noeud comme destination
             for (List<Arc> ensembleArcs : liste_adj.values()) {
+                List<Arc> arcsASupprimer = new ArrayList<>();
                 for (Arc arc : ensembleArcs) {
-                    if(arc.getDestination().equals(noeud) ){
-                        liste_adj.get(arc.getSource()).remove(arc);
+                    if (arc.getDestination().equals(noeud)) {
+                        arcsASupprimer.add(arc);
                     }
-
                 }
+                ensembleArcs.removeAll(arcsASupprimer);
             }
 
+            // Supprimer l'entrée correspondante à ce noeud
+            liste_adj.remove(noeud);
         }
     }
+
     @Override
     public void oterArc(String source, String destination) {
-        if (!contientArc(source,destination)) {
-            throw new IllegalArgumentException();
+        if (!contientArc(source, destination)) {
+            throw new IllegalArgumentException("L'arc entre " + source + " et " + destination + " n'existe pas.");
         }
 
-            for (List<Arc> ensembleArcs : liste_adj.values()) {
-                for (Arc arc : ensembleArcs) {
-                    if (arc.getDestination().equals(destination) &&
-                     arc.getSource().equals(source))
-                        liste_adj.get(arc.getSource()).remove(arc);
+        List<Arc> arcsASupprimer = new ArrayList<>();
+
+        for (List<Arc> ensembleArcs : liste_adj.values()) {
+            for (Arc arc : ensembleArcs) {
+                if (arc.getDestination().equals(destination) && arc.getSource().equals(source)) {
+                    arcsASupprimer.add(arc);
                 }
             }
+        }
 
+        for (Arc arcASupprimer : arcsASupprimer) {
+            liste_adj.get(arcASupprimer.getSource()).remove(arcASupprimer);
+        }
     }
+
 
     @Override
     public List<String> getSommets() {

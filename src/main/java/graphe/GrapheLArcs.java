@@ -42,17 +42,25 @@ public class GrapheLArcs extends Graphe {
 
     @Override
     public void oterSommet(String noeud) {
-
         if (contientSommet(noeud)) {
+            // Créer une liste temporaire pour stocker les arcs à supprimer
+            List<Arc> arcsASupprimer = new ArrayList<>();
 
+            // Parcourir tous les arcs
             for (Arc ax : a) {
-                if (ax.getSource().equals(noeud) || ax.getDestination().equals(noeud))
-                    a.remove(ax);
+                // Vérifier si l'arc a comme source ou destination le noeud à supprimer
+                if (ax.getSource().equals(noeud) || ax.getDestination().equals(noeud)) {
+                    arcsASupprimer.add(ax);
+                }
+            }
+
+            // Supprimer tous les arcs stockés dans la liste temporaire
+            for (Arc ax : arcsASupprimer) {
+                a.remove(ax);
             }
         }
-
-
     }
+
 
     @Override
     public void oterArc(String source, String destination) {

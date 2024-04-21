@@ -41,10 +41,10 @@ public class GrapheMAdj2 extends Graphe{
     @Override
     public void ajouterArc(String source, String destination, Integer valeur) {
         if(contientArc(source , destination)){
-            throw new IllegalArgumentException("il existe déjà un arc entre " + source + "et" + destination);
+            throw new IllegalArgumentException("Il existe déjà un arc entre " + source + " et " + destination);
         }
         if(valeur < 0 ){
-            throw new IllegalArgumentException("La valuation ne doit pas être negative !");
+            throw new IllegalArgumentException("La valuation ne doit pas être négative !");
         }
         if (!contientSommet(source)) {
             ajouterSommet(source);
@@ -52,47 +52,46 @@ public class GrapheMAdj2 extends Graphe{
         if (!contientSommet(destination)) {
             ajouterSommet(destination);
         }
-        for(int i = 0 ; i < matrice.length ; i++){
-            for(int y=0 ; y < matrice.length ; y++){
-                if(som.get(i).equals(source) && som.get(y).equals(destination)) {
-                    matrice[i][y]= valeur;
-                }
-
-            }
-        }
-
+        int indexSource = som.indexOf(source);
+        int indexDest = som.indexOf(destination);
+        matrice[indexSource][indexDest] = valeur;
     }
 
     @Override
     public void oterSommet(String noeud) {
+        if (contientSommet(noeud)) {
+            int index = som.indexOf(noeud);
 
-            if (contientSommet(noeud)) {
-                int index = som.indexOf(noeud);
-
-
-                for (int i = 0; i < matrice.length; i++) {
-                    matrice[index][i] = 0;
-                    matrice[i][index] = 0;
+            // Supprimer les arcs liés au sommet
+            for (int i = 0; i < matrice.length; i++) {
+                if (i != index) {
+                    matrice[i][index] = 0; // Supprimer les arcs sortants
+                    matrice[index][i] = 0; // Supprimer les arcs entrants
                 }
-
-                som.remove(noeud);
             }
 
+            // Supprimer le sommet de la liste des sommets
+            som.remove(index);
+
+            // Réduire la taille de la matrice d'adjacence
+            int[][] nouvelleMatrice = new int[som.size()][som.size()];
+            for (int i = 0; i < som.size(); i++) {
+                for (int j = 0; j < som.size(); j++) {
+                    nouvelleMatrice[i][j] = matrice[i < index ? i : i + 1][j < index ? j : j + 1];
+                }
+            }
+            matrice = nouvelleMatrice;
+        }
     }
 
     @Override
     public void oterArc(String source, String destination) {
         if(!contientArc(source, destination)){
-            throw new IllegalArgumentException();
+            throw new IllegalArgumentException("L'arc entre " + source + " et " + destination + " n'existe pas.");
         }
-        for(int i = 0 ; i < matrice.length ; i++){
-            for(int y = 0 ; y < matrice.length ; y++ ){
-                if(som.get(i).equals(source) && som.get(y).equals(destination))  {
-                    matrice[i][y] = 0;
-                }
-
-            }
-        }
+        int indexSource = som.indexOf(source);
+        int indexDest = som.indexOf(destination);
+        matrice[indexSource][indexDest] = 0;
     }
 
     @Override

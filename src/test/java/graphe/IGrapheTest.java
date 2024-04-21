@@ -59,7 +59,7 @@ class IGrapheTest {
 		for (IGraphe g : graphes) {
 			g.peupler(g31a);
 			tester3_1(g);
-			//test2(g);
+			test2(g);
 		}
 	}
 
@@ -112,15 +112,15 @@ class IGrapheTest {
 
 	}*/
 
-	/* void test2(IGraphe g){
-		g.oterArc("G","B");
+	void test2(IGraphe g){
+		g.oterArc("G","F");
 		assertEquals("A-C(2), A-D(1), "
 				+ "B-G(3), "
 				+ "C-H(2), "
 				+ "D-B(3), D-C(5), D-E(3), "
 				+ "E-C(1), E-G(3), E-H(7), "
 				+ "F:, "
-				+ "G-F(1), "
+				+ "G-B(2), "
 				+ "H-F(4), H-G(2), "
 				+ "I-H(10), "
 				+ "J:", g.toString());
@@ -130,11 +130,32 @@ class IGrapheTest {
 				+ "C-H(2), "
 				+ "E-C(1), E-G(3), E-H(7), "
 				+ "F:, "
-				+ "G-F(1), "
+				+ "G-B(2), "
 				+ "H-F(4), H-G(2), "
 				+ "I-H(10), "
 				+ "J:", g.toString());
-	} */
+		g.oterArc("A" , "C");
+		assertEquals("A:, "
+				+"B-G(3), "
+				+ "C-H(2), "
+				+ "E-C(1), E-G(3), E-H(7), "
+				+ "F:, "
+				+ "G-B(2), "
+				+ "H-F(4), H-G(2), "
+				+ "I-H(10), "
+				+ "J:", g.toString());
+		g.oterSommet("C");
+		assertEquals("A:, "
+				+ "B-G(3), "
+				+ "E-G(3), E-H(7), "
+				+ "F:, "
+				+ "G-B(2), "
+				+ "H-F(4), H-G(2), "
+				+ "I-H(10), "
+				+ "J:", g.toString());
+
+
+	}
 
 	//@Test
 	/*void importer() throws NumberFormatException, FileNotFoundException {
