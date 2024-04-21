@@ -42,14 +42,17 @@ public class GrapheLAdj extends Graphe{
     @Override
     public void oterSommet(String noeud) {
         if (liste_adj.containsKey(noeud)) {
-
             liste_adj.remove(noeud);
+
             for (List<Arc> ensembleArcs : liste_adj.values()) {
                 for (Arc arc : ensembleArcs) {
-                    if (arc.getDestination().equals(noeud) )
+                    if(arc.getDestination().equals(noeud) ){
                         liste_adj.get(arc.getSource()).remove(arc);
+                    }
+
                 }
             }
+
         }
     }
     @Override
@@ -57,7 +60,7 @@ public class GrapheLAdj extends Graphe{
         if (!contientArc(source,destination)) {
             throw new IllegalArgumentException();
         }
-        if(contientArc(source, destination)){
+
             for (List<Arc> ensembleArcs : liste_adj.values()) {
                 for (Arc arc : ensembleArcs) {
                     if (arc.getDestination().equals(destination) &&
@@ -65,7 +68,7 @@ public class GrapheLAdj extends Graphe{
                         liste_adj.get(arc.getSource()).remove(arc);
                 }
             }
-        }
+
     }
 
     @Override

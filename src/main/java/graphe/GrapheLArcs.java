@@ -58,10 +58,12 @@ public class GrapheLArcs extends Graphe {
     public void oterArc(String source, String destination) {
 
         if (contientArc(source , destination)) {
-            for (Arc ax : a) {
-                if (ax.getSource().equals(source) && ax.getDestination().equals(destination))
-                    a.remove(ax);
+            for(int i =0 ; i < a.size() ; i++){
+                if(a.get(i).getSource().equals(source) && a.get(i).getDestination().equals(destination)){
+                    a.remove(a.get(i));
+                }
             }
+
         } else
             throw new IllegalArgumentException("L'Arc n'existe pas dans le graphe");
     }
