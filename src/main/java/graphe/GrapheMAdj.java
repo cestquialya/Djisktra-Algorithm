@@ -1,128 +1,141 @@
 package main.java.graphe;
 
 import java.util.ArrayList;
-import java.util.Collections;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
-public class GrapheMAdj extends Graphe {
-    private int[][] matrice;
-    private Map<String, Integer> indices;
+public class GrapheMAdj extends Graphe{
+    int [][] matrice ;
+    List<String> som ;
 
-    public GrapheMAdj() {
+    public GrapheMAdj(){
         matrice = new int[0][0];
-        indices = new HashMap<>();
+        som = new ArrayList<>();
     }
 
-    public GrapheMAdj(String str) {
+    public GrapheMAdj(String str){
         this();
         this.peupler(str);
     }
-
     @Override
     public void ajouterSommet(String noeud) {
-        if (!indices.containsKey(noeud)) {
-            indices.put(noeud, indices.size());
+        if (!contientSommet(noeud)) {
+            som.add(noeud);
+            int[][] nvmatrice = new int[som.size()][som.size()];
 
-            int newSize = indices.size();
-            int[][] newMatrice = new int[newSize][newSize];
+
             for (int i = 0; i < matrice.length; i++) {
-                System.arraycopy(matrice[i], 0, newMatrice[i], 0, matrice.length);
+                for (int j = 0; j < matrice[i].length; j++) {
+                    nvmatrice[i][j] = matrice[i][j];
+                }
             }
-            matrice = newMatrice;
+
+            for (int i = 0; i < nvmatrice.length; i++) {
+                nvmatrice[i][som.size() - 1] = 0;
+                nvmatrice[som.size() -1][i] = 0;
+            }
+
+            matrice = nvmatrice;
         }
     }
 
+    @Override
     public void ajouterArc(String source, String destination, Integer valeur) {
-        if (!indices.containsKey(source)) {
+        if(contientArc(source , destination)){
+            throw new IllegalArgumentException("Il existe déjà un arc entre " + source + " et " + destination);
+        }
+        if(valeur < 0 ){
+            throw new IllegalArgumentException("La valuation ne doit pas être négative !");
+        }
+        if (!contientSommet(source)) {
             ajouterSommet(source);
         }
-        if (!indices.containsKey(destination)) {
+        if (!contientSommet(destination)) {
             ajouterSommet(destination);
         }
-        int indexSource = indices.get(source);
-        int indexDestination = indices.get(destination);
-
-        if (matrice[indexSource][indexDestination] > 0) {
-            throw new IllegalArgumentException("Un arc existe déjà entre les sommets : " + source + " et " + destination);
-        }
-        if (valeur < 0)
-            throw new IllegalArgumentException("Les valuations ne doivent pas etre negatives " + valeur);
-
-        matrice[indexSource][indexDestination] = valeur;
+        int indexSource = som.indexOf(source);
+        int indexDest = som.indexOf(destination);
+        matrice[indexSource][indexDest] = valeur;
     }
-
 
     @Override
     public void oterSommet(String noeud) {
-        if (indices.containsKey(noeud)) {
-            int index = indices.get(noeud);
-            indices.remove(noeud);
+        if (contientSommet(noeud)) {
+            int index = som.indexOf(noeud);
 
-            // Reset the corresponding row and column in the adjacency matrix
             for (int i = 0; i < matrice.length; i++) {
-                matrice[index][i] = 0;
-                matrice[i][index] = 0;
+                if (i != index) {
+                    matrice[i][index] = 0; // Supprimer les arcs sortants
+                    matrice[index][i] = 0; // Supprimer les arcs entrants
+                }
             }
+
+            som.remove(index);
+
+            int[][] nouvelleMatrice = new int[som.size()][som.size()];
+            for (int i = 0; i < som.size(); i++) {
+                for (int j = 0; j < som.size(); j++) {
+                    nouvelleMatrice[i][j] = matrice[i < index ? i : i + 1][j < index ? j : j + 1];
+                }
+            }
+            matrice = nouvelleMatrice;
         }
     }
 
     @Override
     public void oterArc(String source, String destination) {
-        if (indices.containsKey(source) && indices.containsKey(destination)) {
-            int indexSource = indices.get(source);
-            int indexDestination = indices.get(destination);
-
-            if (matrice[indexSource][indexDestination] == 0) {
-                throw new IllegalArgumentException("Aucun arc n'existe entre les sommets : " + source + " et " + destination);
-            }
-
-            matrice[indexSource][indexDestination] = 0;
-        } else {
-            throw new IllegalArgumentException("Sommet source et/ou sommet de destination introuvable : " + source + ", " + destination);
+        if(!contientArc(source, destination)){
+            throw new IllegalArgumentException("L'arc entre " + source + " et " + destination + " n'existe pas.");
         }
+        int indexSource = som.indexOf(source);
+        int indexDest = som.indexOf(destination);
+        matrice[indexSource][indexDest] = 0;
+    }
+
+    @Override
+    public List<String> getSommets() {
+        return som;
     }
 
     @Override
     public List<String> getSucc(String sommet) {
-        List<String> successors = new ArrayList<>();
-        if (indices.containsKey(sommet)) {
-            int index = indices.get(sommet);
-            for (Map.Entry<String, Integer> entry : indices.entrySet()) {
-                if (matrice[index][entry.getValue()] > 0) {
-                    successors.add(entry.getKey());
-                }
+        List<String> succ = new ArrayList<>();
+        int index = som.indexOf(sommet);
+        for(int i =0 ; i < matrice.length ; i++){
+            if(matrice[index][i] > 0){
+                succ.add(som.get(i));
+
+
             }
         }
-        return successors;
-    }
-
-
-    @Override
-    public List<String> getSommets() {
-        List<String> vertices = new ArrayList<>(indices.keySet());
-        Collections.sort(vertices);
-        return vertices;
+        return succ;
     }
 
     @Override
     public int getValuation(String src, String dest) {
-        int indexSource = indices.get(src);
-        int indexDestination = indices.get(dest);
-        return matrice[indexSource][indexDestination];
+        int indice_src = som.indexOf(src);
+        int indice_dest = som.indexOf(dest);
+        if(matrice[indice_src][indice_dest] > 0){
+            return matrice[indice_src][indice_dest];
+        }
+        return -1;
     }
 
     @Override
     public boolean contientSommet(String sommet) {
-        return indices.containsKey(sommet);
+        return som.contains(sommet);
     }
 
     @Override
     public boolean contientArc(String src, String dest) {
-        int indexSource = indices.get(src);
-        int indexDestination = indices.get(dest);
-        return matrice[indexSource][indexDestination] > 0;
+        for(int i =0 ; i < matrice.length ; i++){
+            for(int y = 0 ; y < matrice.length ; y++){
+                if(som.get(i).equals(src) && som.get(y).equals(dest))  {
+                    if(matrice[i][y] > 0){
+                        return true;
+                    }
+                }
+            }
+        }
+        return false;
     }
-
 }

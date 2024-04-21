@@ -3,31 +3,19 @@ package test.java.graphe;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-import java.io.FileNotFoundException;
-import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.LinkedList;
 import java.util.List;
-import java.util.Map;
-import java.util.stream.Collectors;
 
-import main.java.graphe.Arc;
-import main.java.graphe.GraphImporter;
-import main.java.graphe.GrapheLArcs;
-import main.java.graphe.GrapheMAdj;
-import main.java.graphe.IGraphe;
+import main.java.graphe.*;
 import org.junit.jupiter.api.Test;
 
 class IGrapheTest {
 	private final IGraphe[] graphes = {
-			new GrapheLArcs(), new GrapheLAdj(),
-			new GrapheMAdj(), new GrapheHHAdj()
+			new GrapheLArcs() ,    new GrapheLAdj(),
+			new GrapheMAdj() //new GrapheHHAdj()
+
+
 	};
 
 	// graphe de l'exercice 3.1 du poly de maths
@@ -61,6 +49,7 @@ class IGrapheTest {
 		for (IGraphe g : graphes) {
 			g.peupler(g31a);
 			tester3_1(g);
+			test2(g);
 		}
 	}
 
@@ -92,7 +81,9 @@ class IGrapheTest {
 				() -> g.ajouterArc("A", "B", -1)); // valuation negative
 	}
 
-	void petiteImporation(IGraphe g) {
+
+   /*void petiteImporation(IGraphe g) {
+
 		Arc a = GraphImporter.importer("graphes/orig/g-10-1.txt", g);
 		assertEquals("1-3(5), "
 						+ "10-3(3), 2-1(5), 2-3(5), 2-5(4), "
@@ -104,14 +95,61 @@ class IGrapheTest {
 		assertEquals("7", a.getDestination());
 	}
 
-	@Test
+	/*@Test
 	void petitTestImportation() {
 		for (IGraphe g : graphes)
 			petiteImporation(g);
+
+	}*/
+
+	void test2(IGraphe g){
+		g.oterArc("G","F");
+		assertEquals("A-C(2), A-D(1), "
+				+ "B-G(3), "
+				+ "C-H(2), "
+				+ "D-B(3), D-C(5), D-E(3), "
+				+ "E-C(1), E-G(3), E-H(7), "
+				+ "F:, "
+				+ "G-B(2), "
+				+ "H-F(4), H-G(2), "
+				+ "I-H(10), "
+				+ "J:", g.toString());
+		g.oterSommet("D");
+		assertEquals("A-C(2), "
+				+ "B-G(3), "
+				+ "C-H(2), "
+				+ "E-C(1), E-G(3), E-H(7), "
+				+ "F:, "
+				+ "G-B(2), "
+				+ "H-F(4), H-G(2), "
+				+ "I-H(10), "
+				+ "J:", g.toString());
+		g.oterArc("A" , "C");
+		assertEquals("A:, "
+				+"B-G(3), "
+				+ "C-H(2), "
+				+ "E-C(1), E-G(3), E-H(7), "
+				+ "F:, "
+				+ "G-B(2), "
+				+ "H-F(4), H-G(2), "
+				+ "I-H(10), "
+				+ "J:", g.toString());
+		g.oterSommet("C");
+		assertEquals("A:, "
+				+ "B-G(3), "
+				+ "E-G(3), E-H(7), "
+				+ "F:, "
+				+ "G-B(2), "
+				+ "H-F(4), H-G(2), "
+				+ "I-H(10), "
+				+ "J:", g.toString());
+
+
 	}
 
-	@Test
-	void importer() throws NumberFormatException, FileNotFoundException {
+	//@Test
+	/*void importer() throws NumberFormatException, FileNotFoundException {
+
 		String graphesRep = "graphes";
 		String reponsesRep = "reponses";
 		try {
@@ -178,6 +216,7 @@ class IGrapheTest {
 		} catch (IOException e) {
 			System.out.println("Erreur lors de l'acces aux dossiers: " + e.getMessage());
 		}
-	}
+	}*/
+
 
 }

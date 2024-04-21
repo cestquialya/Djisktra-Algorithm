@@ -4,27 +4,32 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0d8dbf8b-28bf-4435-a135-08b04453df4c" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/graphe/Arc.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/graphe/Arc.java" afterDir="false" />
+    <list default="true" id="37a2ad52-88cd-4786-b0c7-deca8e7d75b6" name="Changes" comment="g">
+      <change beforePath="$PROJECT_DIR$/src/main/java/graphe/GrapheLAdj.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/graphe/GrapheLAdj.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/graphe/GrapheLArcs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/graphe/GrapheLArcs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/graphe/IGrapheTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/graphe/IGrapheTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/graphe/GrapheMAdj2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/graphe/GrapheMAdj2.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "Nsrn17"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Nsrn17&quot;
   }
-}]]></component>
+}</component>
   <component name="GithubPullRequestsUISettings">
     <option name="selectedUrlAndAccountId">
       <UrlAndAccount>
@@ -33,15 +38,111 @@
       </UrlAndAccount>
     </option>
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
+  <component name="ProjectId" id="2f6GJiyIBYaeCVvJO6w3F9gWpmo" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "git-widget-placeholder": "Rebasing dev",
-    "node.js.selected.package.tslint": "(autodetect)"
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "JUnit.IGrapheTest.executor": "Run",
+    "JUnit.IGrapheTest.exo3_1Maths.executor": "Debug",
+    "JUnit.IGrapheTest.petitTestImportation.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "dev",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/nesrine/Documents/java_eclipse/sae_graphe/src/main/java/graphe",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/graphe" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.IGrapheTest">
+    <configuration name="IGrapheTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Saejva" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.java.graphe.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test.java.graphe" />
+      <option name="MAIN_CLASS_NAME" value="test.java.graphe.IGrapheTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="IGrapheTest.exo3_1Maths" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Saejva" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.java.graphe.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test.java.graphe" />
+      <option name="MAIN_CLASS_NAME" value="test.java.graphe.IGrapheTest" />
+      <option name="METHOD_NAME" value="exo3_1Maths" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.IGrapheTest" />
+        <item itemvalue="JUnit.IGrapheTest.exo3_1Maths" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-21.0.2-openjdk-21.0.2-4caba194b151-322ed176" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0d8dbf8b-28bf-4435-a135-08b04453df4c" name="Changes" comment="" />
+      <created>1713114044278</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1713114044278</updated>
+      <workItem from="1713114046053" duration="193000" />
+      <workItem from="1713551099185" duration="3449000" />
+      <workItem from="1713551099185" duration="23490000" />
+      <workItem from="1713551099185" duration="24524000" />
+      <workItem from="1713719034598" duration="5432000" />
+    </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -53,5 +154,19 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="g" />
+    <option name="LAST_COMMIT_MESSAGE" value="g" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NullPointerException" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
