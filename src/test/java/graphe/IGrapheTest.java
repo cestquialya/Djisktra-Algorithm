@@ -19,7 +19,7 @@ class IGrapheTest {
 	};
 
 	// graphe de l'exercice 3.1 du poly de maths
-	// avec en plus un noeud isole : J
+	// avec en plus un noeud isole dfhbdfhfg : J
 	private final String g31 =
 			"A-C(2), A-D(1), "
 					+ "B-G(3), "
