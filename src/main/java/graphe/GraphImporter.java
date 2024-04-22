@@ -97,5 +97,6 @@ public class GraphImporter {
 			throw new IllegalArgumentException(string + " n'est pas un arc");
 		}
 		return new Arc(source, destination, valuation);
+		//etgeth
 	}
 }
