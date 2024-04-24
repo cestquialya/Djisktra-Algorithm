@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="37a2ad52-88cd-4786-b0c7-deca8e7d75b6" name="Changes" comment="g">
-      <change beforePath="$PROJECT_DIR$/src/main/java/graphe/GrapheLAdj.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/graphe/GrapheLAdj.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/graphe/GrapheLArcs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/graphe/GrapheLArcs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/graphe/GrapheMAdj2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/graphe/GrapheMAdj2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Saejva.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Saejva.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/graphe/IGrapheTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/graphe/IGrapheTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,14 +29,12 @@
     &quot;assignee&quot;: &quot;Nsrn17&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">
-    <option name="selectedUrlAndAccountId">
-      <UrlAndAccount>
-        <option name="accountId" value="2761bf5f-0b2a-4dd7-a368-24e499e6510f" />
-        <option name="url" value="https://github.com/alya1-yes/sae_java_108.git" />
-      </UrlAndAccount>
-    </option>
-  </component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/alya1-yes/sae_java_108.git",
+    "accountId": "65a68369-e777-46fb-9daa-c7d51d4ceb01"
+  }
+}]]></component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
@@ -55,9 +52,13 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Downloaded.Files.Path.Enabled": "false",
     "JUnit.IGrapheTest.executor": "Run",
     "JUnit.IGrapheTest.exo3_1Maths.executor": "Debug",
     "JUnit.IGrapheTest.petitTestImportation.executor": "Run",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "dev",
@@ -121,14 +122,15 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="jdk-21.0.2-openjdk-21.0.2-4caba194b151-322ed176" />
+        <option value="bundled-jdk-9f38398b9061-18abd8497189-intellij.indexing.shared.core-IU-241.14494.240" />
+        <option value="bundled-js-predefined-1d06a55b98c1-74d2a5396914-JavaScript-IU-241.14494.240" />
       </set>
     </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="0d8dbf8b-28bf-4435-a135-08b04453df4c" name="Changes" comment="" />
+      <changelist id="37a2ad52-88cd-4786-b0c7-deca8e7d75b6" name="Changes" comment="g" />
       <created>1713114044278</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -138,6 +140,7 @@
       <workItem from="1713551099185" duration="23490000" />
       <workItem from="1713551099185" duration="24524000" />
       <workItem from="1713719034598" duration="5432000" />
+      <workItem from="1713823564859" duration="337000" />
     </task>
     <servers />
   </component>
