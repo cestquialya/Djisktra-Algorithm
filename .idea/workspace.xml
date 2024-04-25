@@ -5,10 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="37a2ad52-88cd-4786-b0c7-deca8e7d75b6" name="Changes" comment="g">
-      <change afterPath="$PROJECT_DIR$/src/main/java/graphe/Dijkstra.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/graphe/IGrapheConst.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/graphe/IGrapheConst.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/graphe/IGrapheTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/graphe/IGrapheTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/graphe/Dijkstra.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/graphe/Dijkstra.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
