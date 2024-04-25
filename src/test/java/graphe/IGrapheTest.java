@@ -3,9 +3,13 @@ package test.java.graphe;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.util.*;
+import java.util.stream.Collectors;
 
 import main.java.graphe.*;
 import org.junit.jupiter.api.Test;
@@ -148,7 +152,7 @@ class IGrapheTest {
 	}
 
 	//@Test
-	/*void importer() throws NumberFormatException, FileNotFoundException {
+	void importer() throws NumberFormatException, FileNotFoundException {
 
 		String graphesRep = "graphes";
 		String reponsesRep = "reponses";
@@ -216,7 +220,7 @@ class IGrapheTest {
 		} catch (IOException e) {
 			System.out.println("Erreur lors de l'acces aux dossiers: " + e.getMessage());
 		}
-	}*/
+	}
 
 
 }

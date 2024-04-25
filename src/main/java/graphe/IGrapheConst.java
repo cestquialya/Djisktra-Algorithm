@@ -12,6 +12,7 @@ public interface IGrapheConst {
 	boolean contientSommet(String sommet);
 	boolean contientArc(String src, String dest);
 
+
 	default String toAString() {
 		List<String> sommetsTries = new ArrayList<>(getSommets());
 		Collections.sort(sommetsTries);
