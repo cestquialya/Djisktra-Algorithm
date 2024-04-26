@@ -5,8 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="37a2ad52-88cd-4786-b0c7-deca8e7d75b6" name="Changes" comment="g">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Saejva.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Saejva.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/graphe/Dijkstra.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/graphe/Dijkstra.java" afterDir="false" />
+    </list>
+    <list id="88b46ed1-a299-49d9-832c-99e5cbfd3318" name="Changes by oweys.chabane" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/java/graphe/Dijkstra.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/graphe/Dijkstra.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/graphe/IGraphe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/graphe/IGraphe.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,12 +35,22 @@
     &quot;assignee&quot;: &quot;Nsrn17&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/alya1-yes/sae_java_108.git&quot;,
-    &quot;accountId&quot;: &quot;65a68369-e777-46fb-9daa-c7d51d4ceb01&quot;
-  }
-}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="eed20803-a974-487c-96d3-f815a4726f78" />
+        <option name="url" value="https://github.com/alya1-yes/sae_java_108.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
+  <component name="LineStatusTrackerManager">
+    <file path="$PROJECT_DIR$/src/main/java/graphe/Dijkstra.java">
+      <ranges>
+        <range start1="13" end1="13" start2="13" end2="28" changelist="37a2ad52-88cd-4786-b0c7-deca8e7d75b6" />
+        <range start1="19" end1="19" start2="34" end2="35" changelist="88b46ed1-a299-49d9-832c-99e5cbfd3318" />
+      </ranges>
+    </file>
+  </component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
@@ -49,29 +65,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
-    &quot;JUnit.IGrapheTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.IGrapheTest.exo3_1Maths.executor&quot;: &quot;Debug&quot;,
-    &quot;JUnit.IGrapheTest.petitTestImportation.executor&quot;: &quot;Run&quot;,
-    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;dev&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/nesrine/Documents/java_eclipse/sae_graphe/src/main/java/graphe&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Downloaded.Files.Path.Enabled": "false",
+    "JUnit.IGrapheTest.executor": "Run",
+    "JUnit.IGrapheTest.exo3_1Maths.executor": "Debug",
+    "JUnit.IGrapheTest.petitTestImportation.executor": "Run",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "dev",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/nesrine/Documents/java_eclipse/sae_graphe/src/main/java/graphe",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/java/graphe" />
@@ -122,8 +139,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9f38398b9061-18abd8497189-intellij.indexing.shared.core-IU-241.14494.240" />
-        <option value="bundled-js-predefined-1d06a55b98c1-74d2a5396914-JavaScript-IU-241.14494.240" />
+        <option value="jdk-21.0.2-openjdk-21.0.2-4caba194b151-322ed176" />
       </set>
     </attachedChunks>
   </component>
@@ -140,7 +156,7 @@
       <workItem from="1713551099185" duration="23490000" />
       <workItem from="1713551099185" duration="24524000" />
       <workItem from="1713719034598" duration="5432000" />
-      <workItem from="1713823564859" duration="337000" />
+      <workItem from="1714134575002" duration="3388000" />
     </task>
     <servers />
   </component>
