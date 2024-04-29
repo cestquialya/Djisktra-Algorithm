@@ -19,19 +19,22 @@ public class Dijkstra {
 
         String pred = "";
         String court = source;
-
+        int tmp=0;
         int min = g.getValuation(court, g.getSucc(court).get(0));
         for (String s : prev.keySet()) {
-            for (int i = 1; i < g.getSucc(s).size(); ++i) {
+                   for (int i = 1; i < g.getSucc(s).size(); ++i) {
                 if (g.getValuation(s, g.getSucc(s).get(i)) < min) {
                     min = g.getValuation(s, g.getSucc(s).get(i));
                     pred = s;
                     court = g.getSucc(s).get(i);
                 }
             }
-            dist.put(court, min);
+            tmp=+min;
+            dist.put(court, tmp);
             prev.put(court, pred); // Nv ancien
+
         }
+        //FAUT PAS OUBLIER CES UNE BOUCLE INFINI
         // on utilise prev pour contnuer les boucles
         //regarder tt les succeseutr de source tant que ?
         // peut etre tant que ya pas de succeseurs ou tant que ya pas de valuation + basse

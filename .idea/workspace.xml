@@ -5,86 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="37a2ad52-88cd-4786-b0c7-deca8e7d75b6" name="Changes" comment="g">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graphes/autres/g-3-1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graphes/autres/g-4-1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graphes/autres/g-5-1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graphes/autres/g-6-1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graphes/barabasi/g-1000002-1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graphes/barabasi/g-1000002-2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graphes/barabasi/g-1000002-3.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graphes/barabasi/g-100002-1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graphes/barabasi/g-100002-10.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graphes/barabasi/g-100002-2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graphes/barabasi/g-100002-3.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graphes/barabasi/g-100002-4.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graphes/barabasi/g-100002-5.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graphes/barabasi/g-100002-6.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graphes/barabasi/g-100002-7.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graphes/barabasi/g-100002-8.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graphes/barabasi/g-100002-9.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graphes/barabasi/g-10002-1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graphes/barabasi/g-10002-10.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graphes/barabasi/g-10002-2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graphes/barabasi/g-10002-3.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graphes/barabasi/g-10002-4.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graphes/barabasi/g-10002-5.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graphes/barabasi/g-10002-6.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graphes/barabasi/g-10002-7.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graphes/barabasi/g-10002-8.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graphes/barabasi/g-10002-9.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graphes/barabasi/g-1002-1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graphes/barabasi/g-102-1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graphes/full/g-1001-1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graphes/full/g-101-1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graphes/full/g-11-1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graphes/full/g-301-1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graphes/full/g-5001-1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graphes/full/g-501-1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graphes/orig/g-10-1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graphes/orig/g-10-10.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graphes/orig/g-10-2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graphes/orig/g-10-3.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graphes/orig/g-10-4.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graphes/orig/g-10-5.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graphes/orig/g-10-6.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graphes/orig/g-10-7.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graphes/orig/g-10-8.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graphes/orig/g-10-9.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graphes/orig/g-100-1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graphes/orig/g-100-2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graphes/orig/g-100-3.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graphes/orig/g-100-4.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graphes/orig/g-100-5.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graphes/orig/g-1000-1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graphes/orig/g-1000-2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graphes/orig/g-1000-3.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graphes/orig/g-1000-4.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graphes/orig/g-1000-5.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graphes/orig/g-1000-6.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graphes/orig/g-10000-1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graphes/orig/g-10000-2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graphes/orig/g-10000-3.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graphes/orig/g-10000-4.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graphes/orig/g-10000-5.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graphes/orig/g-10000-6.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graphes/orig/g-100000-1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graphes/orig/g-100000-2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graphes/orig/g-100000-3.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graphes/orig/g-100000-4.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graphes/orig/g-1000000-1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graphes/orig/g-1000000-2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graphes/orig/g-12-1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graphes/orig/g-12-2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graphes/orig/g-12-3.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graphes/orig/g-12-4.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graphes/orig/g-12-5.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/graphe/Dijkstra.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/graphe/Dijkstra.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/graphe/IGrapheTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/graphe/IGrapheTest.java" afterDir="false" />
     </list>
     <list id="88b46ed1-a299-49d9-832c-99e5cbfd3318" name="Changes by oweys.chabane" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -137,7 +58,7 @@
     "JUnit.IGrapheTest.executor": "Run",
     "JUnit.IGrapheTest.exo3_1Maths (1).executor": "Run",
     "JUnit.IGrapheTest.exo3_1Maths.executor": "Debug",
-    "JUnit.IGrapheTest.importer (1).executor": "Debug",
+    "JUnit.IGrapheTest.importer (1).executor": "Run",
     "JUnit.IGrapheTest.importer.executor": "Run",
     "JUnit.IGrapheTest.petitTestImportation.executor": "Run",
     "Repository.Attach.Annotations": "false",
@@ -266,6 +187,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
+        <option value="jdk-11.0.16-jbr_dcevm-11.0.16-4caba194b151-788636e5" />
         <option value="jdk-21.0.2-openjdk-21.0.2-4caba194b151-322ed176" />
       </set>
     </attachedChunks>
@@ -321,36 +243,6 @@
           <url>file://$PROJECT_DIR$/src/test/java/graphe/IGrapheTest.java</url>
           <line>160</line>
           <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/graphe/IGrapheTest.java</url>
-          <line>170</line>
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/graphe/IGrapheTest.java</url>
-          <line>174</line>
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/graphe/IGrapheTest.java</url>
-          <line>180</line>
-          <option name="timeStamp" value="11" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/graphe/IGrapheTest.java</url>
-          <line>168</line>
-          <option name="timeStamp" value="12" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/graphe/IGrapheTest.java</url>
-          <line>167</line>
-          <option name="timeStamp" value="13" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/graphe/IGrapheTest.java</url>
-          <line>171</line>
-          <option name="timeStamp" value="14" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
