@@ -5,7 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="37a2ad52-88cd-4786-b0c7-deca8e7d75b6" name="Changes" comment="g">
+      <change afterPath="$PROJECT_DIR$/graphes/g-501-1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reponses/r-501-1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/graphe/GrapheMAdj2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/graphe/Dijkstra.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/graphe/Dijkstra.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/graphe/IGrapheTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/graphe/IGrapheTest.java" afterDir="false" />
     </list>
     <list id="88b46ed1-a299-49d9-832c-99e5cbfd3318" name="Changes by oweys.chabane" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,6 +27,44 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <excluded-from-favorite>
+      <branch-storage>
+        <map>
+          <entry type="LOCAL">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="master" />
+              </list>
+            </value>
+          </entry>
+          <entry type="REMOTE">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="origin/master" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </excluded-from-favorite>
+    <favorite-branches>
+      <branch-storage>
+        <map>
+          <entry type="REMOTE">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="origin/dev" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </favorite-branches>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="ecc75ee5bd0800f3a1a3aafc15f56623d809f5e1" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -32,7 +76,7 @@
   <component name="GithubPullRequestsUISettings">
     <option name="selectedUrlAndAccountId">
       <UrlAndAccount>
-        <option name="accountId" value="eed20803-a974-487c-96d3-f815a4726f78" />
+        <option name="accountId" value="d0399716-f5f5-44e0-b375-2451dda83ddf" />
         <option name="url" value="https://github.com/alya1-yes/sae_java_108.git" />
       </UrlAndAccount>
     </option>
@@ -70,7 +114,7 @@
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "dev",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/nesrine/Documents/java_eclipse/sae_graphe",
+    "last_opened_file_path": "C:/Users/ayind/IdeaProjects/sae_java_108/src/main/java/graphe",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -81,10 +125,15 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\ayind\IdeaProjects\sae_java_108\src\main\java\graphe" />
+      <recent name="C:\Users\ayind\IdeaProjects\sae_java_108\reponses" />
+      <recent name="C:\Users\ayind\IdeaProjects\sae_java_108\graphes" />
+      <recent name="C:\Users\ayind\IdeaProjects\sae_java_108" />
       <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/src/main/java/graphe" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\ayind\IdeaProjects\sae_java_108\reponses" />
+      <recent name="C:\Users\ayind\IdeaProjects\sae_java_108\graphes" />
       <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$" />
     </key>
@@ -178,9 +227,9 @@
       <list>
         <item itemvalue="JUnit.IGrapheTest.importer (1)" />
         <item itemvalue="JUnit.IGrapheTest.petitTestImportation" />
-        <item itemvalue="JUnit.IGrapheTest" />
-        <item itemvalue="JUnit.IGrapheTest.exo3_1Maths (1)" />
         <item itemvalue="JUnit.IGrapheTest.importer" />
+        <item itemvalue="JUnit.IGrapheTest.exo3_1Maths (1)" />
+        <item itemvalue="JUnit.IGrapheTest" />
       </list>
     </recent_temporary>
   </component>
@@ -188,7 +237,6 @@
     <attachedChunks>
       <set>
         <option value="jdk-11.0.16-jbr_dcevm-11.0.16-4caba194b151-788636e5" />
-        <option value="jdk-21.0.2-openjdk-21.0.2-4caba194b151-322ed176" />
       </set>
     </attachedChunks>
   </component>
@@ -206,6 +254,8 @@
       <workItem from="1713551099185" duration="24524000" />
       <workItem from="1713719034598" duration="5432000" />
       <workItem from="1714134575002" duration="3388000" />
+      <workItem from="1714571488847" duration="984000" />
+      <workItem from="1714572505905" duration="12220000" />
     </task>
     <servers />
   </component>
@@ -217,7 +267,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -234,16 +296,6 @@
           <properties class="java.lang.NullPointerException" package="java.lang" />
           <option name="timeStamp" value="1" />
         </breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/graphe/IGrapheTest.java</url>
-          <line>162</line>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/graphe/IGrapheTest.java</url>
-          <line>160</line>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>

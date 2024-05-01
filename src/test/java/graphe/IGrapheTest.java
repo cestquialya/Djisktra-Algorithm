@@ -153,7 +153,7 @@ class IGrapheTest {
 
 	@Test
 	void importer() throws NumberFormatException, FileNotFoundException {
-
+		System.out.println("oweys pue");
 		String graphesRep = "graphes";
 		String reponsesRep = "reponses";
 
@@ -172,7 +172,7 @@ class IGrapheTest {
 				Path file1 = iterator1.next();
 				Path file2 = iterator2.next();
 
-				IGraphe g = new GrapheLArcs();
+				IGraphe g = new GrapheMAdj2();
 				Arc arc = GraphImporter.importer(file1.toFile(), g);
 
 				List<Integer> listeEntiers = new ArrayList<>();
