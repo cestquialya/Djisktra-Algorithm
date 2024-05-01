@@ -153,7 +153,6 @@ class IGrapheTest {
 
 	@Test
 	void importer() throws NumberFormatException, FileNotFoundException {
-		System.out.println("oweys pue");
 		String graphesRep = "graphes";
 		String reponsesRep = "reponses";
 
