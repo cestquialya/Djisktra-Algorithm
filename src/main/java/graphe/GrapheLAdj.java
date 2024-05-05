@@ -30,7 +30,7 @@ public class GrapheLAdj extends Graphe{
     @Override
     public void ajouterArc(String source, String destination, Integer valeur) {
         if(valeur < 0 || contientArc(source , destination)){
-            throw new IllegalArgumentException();
+            throw new IllegalArgumentException("fheaoghea");
         }
         if(!liste_adj.containsKey(source)){
             ajouterSommet(source);
@@ -52,8 +52,6 @@ public class GrapheLAdj extends Graphe{
                 }
                 ensembleArcs.removeAll(arcsASupprimer);
             }
-
-
             liste_adj.remove(noeud);
         }
     }
@@ -82,11 +80,7 @@ public class GrapheLAdj extends Graphe{
 
     @Override
     public List<String> getSommets() {
-        List<String> l = new ArrayList<>();
-        for(String s : liste_adj.keySet()){
-            l.add(s);
-        }
-        return l;
+        return new ArrayList<>(liste_adj.keySet());
     }
 
     @Override

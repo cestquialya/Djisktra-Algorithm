@@ -17,12 +17,12 @@ public class Dijkstra {
         queue.add(source);
 
         while (!queue.isEmpty()) {
-            String current = queue.poll();
-            for (String succ : g.getSucc(current)) {
-                int valuation = g.getValuation(current, succ);
-                if (!dist.containsKey(succ) || dist.get(current) + valuation < dist.get(succ)) {
-                    dist.put(succ, dist.get(current) + valuation);
-                    prev.put(succ, current);
+            String actuel = queue.poll();
+            for (String succ : g.getSucc(actuel)) {
+                int valuation = g.getValuation(actuel, succ);
+                if (!dist.containsKey(succ) || dist.get(actuel) + valuation < dist.get(succ)) {
+                    dist.put(succ, dist.get(actuel) + valuation);
+                    prev.put(succ, actuel);
                     queue.add(succ);
                 }
             }
