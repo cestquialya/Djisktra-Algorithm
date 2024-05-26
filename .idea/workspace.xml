@@ -4,7 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="37a2ad52-88cd-4786-b0c7-deca8e7d75b6" name="Changes" comment="amelioration du code" />
+    <list default="true" id="37a2ad52-88cd-4786-b0c7-deca8e7d75b6" name="Changes" comment="amelioration du code pour de vrai vrai vrai">
+      <change afterPath="$PROJECT_DIR$/src/test/java/graphe/IGrapheTestLAdj.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/graphe/IGrapheTestLArcs.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/graphe/IGrapheTestMAdj.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/graphe/IGrapheTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/graphe/IGrapheTestHHAdj.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main/java/graphe/Dijkstra.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/main/java/graphe/Dijkstra.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main/java/graphe/GrapheHHAdj.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/main/java/graphe/GrapheHHAdj.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main/java/graphe/GrapheLAdj.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/main/java/graphe/GrapheLAdj.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main/java/graphe/GrapheLArcs.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/main/java/graphe/GrapheLArcs.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main/java/graphe/GrapheMAdj.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/main/java/graphe/GrapheMAdj.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/test/java/graphe/IGrapheTest.class" beforeDir="false" />
+    </list>
     <list id="88b46ed1-a299-49d9-832c-99e5cbfd3318" name="Changes by oweys.chabane" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,35 +97,36 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
-    &quot;JUnit.IGrapheTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.IGrapheTest.exo3_1Maths (1).executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.IGrapheTest.exo3_1Maths.executor&quot;: &quot;Debug&quot;,
-    &quot;JUnit.IGrapheTest.importer (1).executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.IGrapheTest.importer.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.IGrapheTest.petitTestImportation.executor&quot;: &quot;Run&quot;,
-    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;dev&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/ayind/IdeaProjects/sae_java_108/src/main/java/graphe&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.completion&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Downloaded.Files.Path.Enabled": "false",
+    "JUnit.IGrapheTest.executor": "Run",
+    "JUnit.IGrapheTest.exo3_1Maths (1).executor": "Run",
+    "JUnit.IGrapheTest.exo3_1Maths.executor": "Debug",
+    "JUnit.IGrapheTest.importer (1).executor": "Run",
+    "JUnit.IGrapheTest.importer.executor": "Run",
+    "JUnit.IGrapheTest.petitTestImportation.executor": "Run",
+    "JUnit.IGrapheTestHHAdj.executor": "Run",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/ayind/IdeaProjects/sae_java_108/src/main/java/graphe",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "editor.preferences.completion",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\ayind\IdeaProjects\sae_java_108\src\main\java\graphe" />
@@ -123,18 +136,22 @@
       <recent name="$PROJECT_DIR$" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\oweys\IdeaProjects\sae_java_108\reponses" />
+      <recent name="C:\Users\oweys\IdeaProjects\sae_java_108\graphes" />
       <recent name="C:\Users\ayind\IdeaProjects\sae_java_108\reponses" />
       <recent name="C:\Users\ayind\IdeaProjects\sae_java_108\graphes" />
       <recent name="$PROJECT_DIR$/src" />
-      <recent name="$PROJECT_DIR$" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
       <recent name="main.java.graphe" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="test.java.graphe" />
+    </key>
   </component>
-  <component name="RunManager" selected="JUnit.IGrapheTest">
-    <configuration name="IGrapheTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.IGrapheTestHHAdj">
+    <configuration name="IGrapheTestHHAdj" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SAEGraphes2024" />
       <extension name="coverage">
         <pattern>
@@ -143,14 +160,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="test.java.graphe" />
-      <option name="MAIN_CLASS_NAME" value="test.java.graphe.IGrapheTest" />
+      <option name="MAIN_CLASS_NAME" value="test.java.graphe.IGrapheTestHHAdj" />
       <option name="METHOD_NAME" value="" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="IGrapheTest.exo3_1Maths (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="IGrapheTestHHAdj.exo3_1Maths" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SAEGraphes2024" />
       <extension name="coverage">
         <pattern>
@@ -159,14 +176,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="test.java.graphe" />
-      <option name="MAIN_CLASS_NAME" value="test.java.graphe.IGrapheTest" />
+      <option name="MAIN_CLASS_NAME" value="test.java.graphe.IGrapheTestHHAdj" />
       <option name="METHOD_NAME" value="exo3_1Maths" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="IGrapheTest.importer (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="IGrapheTestHHAdj.importer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SAEGraphes2024" />
       <extension name="coverage">
         <pattern>
@@ -175,30 +192,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="test.java.graphe" />
-      <option name="MAIN_CLASS_NAME" value="test.java.graphe.IGrapheTest" />
+      <option name="MAIN_CLASS_NAME" value="test.java.graphe.IGrapheTestHHAdj" />
       <option name="METHOD_NAME" value="importer" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="IGrapheTest.importer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Saejva" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="test.java.graphe.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="test.java.graphe" />
-      <option name="MAIN_CLASS_NAME" value="test.java.graphe.IGrapheTest" />
-      <option name="METHOD_NAME" value="importer" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="IGrapheTest.petitTestImportation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="IGrapheTestHHAdj.importer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SAEGraphes2024" />
       <extension name="coverage">
         <pattern>
@@ -207,7 +208,23 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="test.java.graphe" />
-      <option name="MAIN_CLASS_NAME" value="test.java.graphe.IGrapheTest" />
+      <option name="MAIN_CLASS_NAME" value="test.java.graphe.IGrapheTestHHAdj" />
+      <option name="METHOD_NAME" value="importer" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="IGrapheTestHHAdj.petitTestImportation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SAEGraphes2024" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.java.graphe.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test.java.graphe" />
+      <option name="MAIN_CLASS_NAME" value="test.java.graphe.IGrapheTestHHAdj" />
       <option name="METHOD_NAME" value="petitTestImportation" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -216,11 +233,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.IGrapheTest" />
-        <item itemvalue="JUnit.IGrapheTest.importer (1)" />
-        <item itemvalue="JUnit.IGrapheTest.petitTestImportation" />
-        <item itemvalue="JUnit.IGrapheTest.importer" />
-        <item itemvalue="JUnit.IGrapheTest.exo3_1Maths (1)" />
+        <item itemvalue="JUnit.IGrapheTestHHAdj" />
+        <item itemvalue="JUnit.IGrapheTestHHAdj.importer" />
+        <item itemvalue="JUnit.IGrapheTestHHAdj.petitTestImportation" />
+        <item itemvalue="JUnit.IGrapheTestHHAdj.importer" />
+        <item itemvalue="JUnit.IGrapheTestHHAdj.exo3_1Maths" />
       </list>
     </recent_temporary>
   </component>

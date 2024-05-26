@@ -14,10 +14,9 @@ import java.util.stream.Collectors;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class IGrapheTest {
+class IGrapheTestHHAdj {
 	private final IGraphe[] graphes = {
-			new GrapheLArcs() ,    new GrapheLAdj(),
-			new GrapheMAdj(), new GrapheHHAdj()
+			new GrapheHHAdj()
 
 
 	};
