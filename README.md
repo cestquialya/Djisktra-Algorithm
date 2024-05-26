@@ -6,11 +6,12 @@ Hajjem Nesrine
 Ayinde Alya
 
 -Classes codées :
-HHAdj
-LAdj
-LArcs
-MAdj
+ HHAdj 
+ LAdj
+ LArcs
+ MAdj
+ Djisktra
 
 Dijkstra passe tous les tests "autres", "orig", "barabasi" et "full" avec HHAdj et LAdj
 Avec MAdj il passe "autres", "orig" et "full"
-Avec LArcs il passe uniquement "autres"
+Avec LArcs il passe uniquement "autres" et certains "orig"
