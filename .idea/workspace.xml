@@ -4,16 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="37a2ad52-88cd-4786-b0c7-deca8e7d75b6" name="Changes" comment="Dijkstra sans le commentaire la">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.mdB" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/graphe/Dijkstra.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/graphe/Dijkstra.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/graphe/GrapheHHAdj.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/graphe/GrapheHHAdj.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/graphe/GrapheLAdj.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/graphe/GrapheLAdj.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/graphe/GrapheMAdj.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/graphe/GrapheMAdj.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/graphe/GrapheMAdj2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/graphe/IGrapheTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/graphe/IGrapheTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="37a2ad52-88cd-4786-b0c7-deca8e7d75b6" name="Changes" comment="amelioration du code" />
     <list id="88b46ed1-a299-49d9-832c-99e5cbfd3318" name="Changes by oweys.chabane" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -271,7 +262,15 @@
       <option name="project" value="LOCAL" />
       <updated>1714590122914</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="amelioration du code">
+      <option name="closed" value="true" />
+      <created>1716736011597</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1716736011597</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -318,7 +317,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="g" />
     <MESSAGE value="Dijkstra sans le commentaire la" />
-    <option name="LAST_COMMIT_MESSAGE" value="Dijkstra sans le commentaire la" />
+    <MESSAGE value="amelioration du code" />
+    <option name="LAST_COMMIT_MESSAGE" value="amelioration du code" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
