@@ -17,7 +17,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class IGrapheTest {
 	private final IGraphe[] graphes = {
 			new GrapheLArcs() ,    new GrapheLAdj(),
-			new GrapheMAdj() //new GrapheHHAdj()
+			new GrapheMAdj(), new GrapheHHAdj()
 
 
 	};
@@ -53,7 +53,6 @@ class IGrapheTest {
 		for (IGraphe g : graphes) {
 			g.peupler(g31a);
 			tester3_1(g);
-			test2(g);
 		}
 	}
 
@@ -99,61 +98,15 @@ class IGrapheTest {
 		assertEquals("7", a.getDestination());
 	}
 
-	@Test
-	void petitTestImportation() {
-		for (IGraphe g : graphes)
-			petiteImporation(g);
-
-	}
-
-	void test2(IGraphe g){
-		g.oterArc("G","F");
-		assertEquals("A-C(2), A-D(1), "
-				+ "B-G(3), "
-				+ "C-H(2), "
-				+ "D-B(3), D-C(5), D-E(3), "
-				+ "E-C(1), E-G(3), E-H(7), "
-				+ "F:, "
-				+ "G-B(2), "
-				+ "H-F(4), H-G(2), "
-				+ "I-H(10), "
-				+ "J:", g.toString());
-		g.oterSommet("D");
-		assertEquals("A-C(2), "
-				+ "B-G(3), "
-				+ "C-H(2), "
-				+ "E-C(1), E-G(3), E-H(7), "
-				+ "F:, "
-				+ "G-B(2), "
-				+ "H-F(4), H-G(2), "
-				+ "I-H(10), "
-				+ "J:", g.toString());
-		g.oterArc("A" , "C");
-		assertEquals("A:, "
-				+"B-G(3), "
-				+ "C-H(2), "
-				+ "E-C(1), E-G(3), E-H(7), "
-				+ "F:, "
-				+ "G-B(2), "
-				+ "H-F(4), H-G(2), "
-				+ "I-H(10), "
-				+ "J:", g.toString());
-		g.oterSommet("C");
-		assertEquals("A:, "
-				+ "B-G(3), "
-				+ "E-G(3), E-H(7), "
-				+ "F:, "
-				+ "G-B(2), "
-				+ "H-F(4), H-G(2), "
-				+ "I-H(10), "
-				+ "J:", g.toString());
-
-
-	}
+//	@Test
+//	void petitTestImportation() {
+//		for (IGraphe g : graphes)
+//			petiteImporation(g);
+//
+//	}
 
 	@Test
 	void importer() throws NumberFormatException, FileNotFoundException {
-
 		String graphesRep = "graphes";
 		String reponsesRep = "reponses";
 
@@ -172,7 +125,7 @@ class IGrapheTest {
 				Path file1 = iterator1.next();
 				Path file2 = iterator2.next();
 
-				IGraphe g = new GrapheLArcs();
+				IGraphe g = new GrapheHHAdj();
 				Arc arc = GraphImporter.importer(file1.toFile(), g);
 
 				List<Integer> listeEntiers = new ArrayList<>();

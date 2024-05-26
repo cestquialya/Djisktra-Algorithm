@@ -1,17 +1,17 @@
 package main.java.graphe;
 
-
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+public class GrapheLAdj extends Graphe {
+    private Map<String, List<Arc>> liste_adj;
+    private Map<String, List<String>> liste_succ;
 
-public class GrapheLAdj extends Graphe{
-    private Map<String , List<Arc>> liste_adj;
-
-    public GrapheLAdj(){
+    public GrapheLAdj() {
         liste_adj = new HashMap<>();
+        liste_succ = new HashMap<>();
     }
 
     public GrapheLAdj(String str) {
@@ -21,40 +21,37 @@ public class GrapheLAdj extends Graphe{
 
     @Override
     public void ajouterSommet(String noeud) {
-        if(!contientSommet(noeud)){
-            liste_adj.put(noeud,new ArrayList<Arc>());
+        if (!contientSommet(noeud)) {
+            liste_adj.put(noeud, new ArrayList<>());
+            liste_succ.put(noeud, new ArrayList<>());
         }
-
     }
 
     @Override
     public void ajouterArc(String source, String destination, Integer valeur) {
-        if(valeur < 0 || contientArc(source , destination)){
-            throw new IllegalArgumentException();
+        if(contientArc(source, destination)){
+            throw new IllegalArgumentException("l'arc" + source + "-" + destination + "existe deja.");
         }
-        if(!liste_adj.containsKey(source)){
+
+        if(valeur < 0){
+            throw new IllegalArgumentException(("La valeur est strictement inférieure a 0 " + "(" + valeur + ")"));
+        }
+
+        if (!liste_adj.containsKey(source)) {
             ajouterSommet(source);
         }
         liste_adj.get(source).add(new Arc(source, destination, valeur));
-
+        liste_succ.get(source).add(destination);
     }
 
     @Override
     public void oterSommet(String noeud) {
         if (liste_adj.containsKey(noeud)) {
-
             for (List<Arc> ensembleArcs : liste_adj.values()) {
-                List<Arc> arcsASupprimer = new ArrayList<>();
-                for (Arc arc : ensembleArcs) {
-                    if (arc.getDestination().equals(noeud)) {
-                        arcsASupprimer.add(arc);
-                    }
-                }
-                ensembleArcs.removeAll(arcsASupprimer);
+                ensembleArcs.removeIf(arc -> arc.getDestination().equals(noeud) || arc.getSource().equals(noeud));
             }
-
-
             liste_adj.remove(noeud);
+            liste_succ.remove(noeud);
         }
     }
 
@@ -76,41 +73,31 @@ public class GrapheLAdj extends Graphe{
 
         for (Arc arcASupprimer : arcsASupprimer) {
             liste_adj.get(arcASupprimer.getSource()).remove(arcASupprimer);
+            liste_succ.get(arcASupprimer.getSource()).remove(arcASupprimer.getDestination());
         }
     }
 
-
     @Override
     public List<String> getSommets() {
-        List<String> l = new ArrayList<>();
-        for(String s : liste_adj.keySet()){
-            l.add(s);
-        }
-        return l;
+        return new ArrayList<>(liste_adj.keySet());
     }
 
     @Override
     public List<String> getSucc(String sommet) {
-        List<String> successors = new ArrayList<>();
-        if (liste_adj.containsKey(sommet)) {
-            for (Map.Entry<String, List<Arc>> entry : liste_adj.entrySet()) {
-                if (entry.getKey().equals(sommet)) {
-                    for (Arc a : liste_adj.get(sommet))
-                        successors.add(a.getDestination());
-                }
-            }
+        if (liste_succ.containsKey(sommet)) {
+            return liste_succ.get(sommet);
         }
-        return successors;
+        return new ArrayList<>();
     }
 
     @Override
     public int getValuation(String src, String dest) {
-        if(contientArc(src , dest)){
-            for (Arc a : liste_adj.get(src))
-                if(a.getDestination().equals(dest)){
+        if (contientArc(src, dest)) {
+            for (Arc a : liste_adj.get(src)) {
+                if (a.getDestination().equals(dest)) {
                     return a.getValuation();
                 }
-
+            }
         }
         return -1;
     }
@@ -122,9 +109,9 @@ public class GrapheLAdj extends Graphe{
 
     @Override
     public boolean contientArc(String src, String dest) {
-        for(String s : getSommets())
-            if(s.equals(src) && getSucc(src).contains(dest))
-                return true;
+        if (liste_succ.containsKey(src)) {
+            return liste_succ.get(src).contains(dest);
+        }
         return false;
     }
 }
