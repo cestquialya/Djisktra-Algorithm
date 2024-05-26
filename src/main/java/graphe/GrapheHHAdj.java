@@ -27,8 +27,13 @@ public class GrapheHHAdj extends Graphe{
 
     @Override
     public void ajouterArc(String source, String destination, Integer valeur) {
-        if(hhadj.containsKey(source) && hhadj.get(source).containsKey(destination) || valeur < 0)
-            throw new IllegalArgumentException("hdntsrrs,enhzr");
+        if(contientArc(source, destination)){
+            throw new IllegalArgumentException("l'arc" + source + "-" + destination + "existe deja.");
+        }
+
+        if(valeur < 0){
+            throw new IllegalArgumentException(("La valeur est strictement inférieure a 0 " + "(" + valeur + ")"));
+        }
 
         if(!hhadj.containsKey(source))
             hhadj.put(source, new HashMap<>());
@@ -51,21 +56,21 @@ public class GrapheHHAdj extends Graphe{
 
     @Override
     public void oterArc(String source, String destination) {
-            if(!contientArc(source, destination)){
-                throw new IllegalArgumentException("ezrhrzhrzhrzh");
-            }
-            hhadj.get(source).remove(destination);
+        if(!contientArc(source, destination)){
+            throw new IllegalArgumentException("L'arc" + source + "-" + destination +" n'existe pas");
+        }
+        hhadj.get(source).remove(destination);
 
-            HashMap<String, Integer> donneluiunnom = new HashMap<>();
+        HashMap<String, Integer> som = new HashMap<>();
 
-            for(String s : hhadj.keySet()){
-                if(hhadj.get(s).containsKey(null)) {
-                    donneluiunnom.put(s, null);
-                }
+        for(String s : hhadj.keySet()){
+            if(hhadj.get(s).containsKey(null)) {
+                som.put(s, null);
             }
-            for(String s : donneluiunnom.keySet()){
-                hhadj.remove(s);
-            }
+        }
+        for(String s : som.keySet()){
+            hhadj.remove(s);
+        }
 
     }
 
@@ -76,6 +81,9 @@ public class GrapheHHAdj extends Graphe{
 
     @Override
     public List<String> getSucc(String sommet) {
+        if (!contientSommet(sommet)){
+            return new ArrayList<>();
+        }
         return new ArrayList<>(hhadj.get(sommet).keySet());
     }
 
@@ -91,10 +99,12 @@ public class GrapheHHAdj extends Graphe{
     public boolean contientSommet(String sommet) {
         return hhadj.containsKey(sommet);
     }
-
-    //PROBLEME
+    
     @Override
     public boolean contientArc(String src, String dest) {
-        return hhadj.get(src).containsKey(dest);
+        if(hhadj.get(src) != null){
+            return hhadj.get(src).containsKey(dest);
+        }
+        return false;
     }
 }

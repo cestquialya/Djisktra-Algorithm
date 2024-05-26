@@ -29,9 +29,14 @@ public class GrapheLAdj extends Graphe {
 
     @Override
     public void ajouterArc(String source, String destination, Integer valeur) {
-        if (valeur < 0 || contientArc(source, destination)) {
-            throw new IllegalArgumentException("fheaoghea");
+        if(contientArc(source, destination)){
+            throw new IllegalArgumentException("l'arc" + source + "-" + destination + "existe deja.");
         }
+
+        if(valeur < 0){
+            throw new IllegalArgumentException(("La valeur est strictement inférieure a 0 " + "(" + valeur + ")"));
+        }
+
         if (!liste_adj.containsKey(source)) {
             ajouterSommet(source);
         }
