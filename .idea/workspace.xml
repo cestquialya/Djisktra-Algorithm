@@ -5,17 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="37a2ad52-88cd-4786-b0c7-deca8e7d75b6" name="Changes" comment="amelioration du code pour de vrai vrai vrai">
-      <change afterPath="$PROJECT_DIR$/src/test/java/graphe/IGrapheTestLAdj.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/graphe/IGrapheTestLArcs.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/graphe/IGrapheTestMAdj.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/graphe/IGrapheTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/graphe/IGrapheTestHHAdj.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/main/java/graphe/Dijkstra.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/main/java/graphe/Dijkstra.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/main/java/graphe/GrapheHHAdj.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/main/java/graphe/GrapheHHAdj.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/main/java/graphe/GrapheLAdj.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/main/java/graphe/GrapheLAdj.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/main/java/graphe/GrapheLArcs.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/main/java/graphe/GrapheLArcs.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/main/java/graphe/GrapheMAdj.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/main/java/graphe/GrapheMAdj.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/test/java/graphe/IGrapheTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <list id="88b46ed1-a299-49d9-832c-99e5cbfd3318" name="Changes by oweys.chabane" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -83,6 +73,9 @@
     &quot;accountId&quot;: &quot;2c046834-708a-4c96-9b4d-cfe3cb47af60&quot;
   }
 }</component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
@@ -97,36 +90,36 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "Downloaded.Files.Path.Enabled": "false",
-    "JUnit.IGrapheTest.executor": "Run",
-    "JUnit.IGrapheTest.exo3_1Maths (1).executor": "Run",
-    "JUnit.IGrapheTest.exo3_1Maths.executor": "Debug",
-    "JUnit.IGrapheTest.importer (1).executor": "Run",
-    "JUnit.IGrapheTest.importer.executor": "Run",
-    "JUnit.IGrapheTest.petitTestImportation.executor": "Run",
-    "JUnit.IGrapheTestHHAdj.executor": "Run",
-    "Repository.Attach.Annotations": "false",
-    "Repository.Attach.JavaDocs": "false",
-    "Repository.Attach.Sources": "false",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/ayind/IdeaProjects/sae_java_108/src/main/java/graphe",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "editor.preferences.completion",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;JUnit.IGrapheTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.IGrapheTest.exo3_1Maths (1).executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.IGrapheTest.exo3_1Maths.executor&quot;: &quot;Debug&quot;,
+    &quot;JUnit.IGrapheTest.importer (1).executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.IGrapheTest.importer.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.IGrapheTest.petitTestImportation.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.IGrapheTestHHAdj.executor&quot;: &quot;Run&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/ayind/IdeaProjects/sae_java_108/src/main/java/graphe&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.completion&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\ayind\IdeaProjects\sae_java_108\src\main\java\graphe" />
@@ -244,8 +237,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9f38398b9061-18abd8497189-intellij.indexing.shared.core-IU-241.14494.240" />
-        <option value="bundled-js-predefined-1d06a55b98c1-74d2a5396914-JavaScript-IU-241.14494.240" />
+        <option value="jdk-11.0.16-jbr_dcevm-11.0.16-4caba194b151-788636e5" />
       </set>
     </attachedChunks>
   </component>
@@ -270,6 +262,7 @@
       <workItem from="1714925843821" duration="80000" />
       <workItem from="1714925936334" duration="5886000" />
       <workItem from="1714931897346" duration="7981000" />
+      <workItem from="1737498492484" duration="354000" />
     </task>
     <task id="LOCAL-00001" summary="Dijkstra sans le commentaire la">
       <option name="closed" value="true" />

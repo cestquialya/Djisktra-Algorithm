@@ -16,3 +16,4 @@ Dijkstra passe tous les tests "autres", "orig", "barabasi" et "full" avec HHAdj 
 Avec MAdj il passe "autres", "orig" et "full"
 Avec LArcs il passe uniquement "autres" et certains "orig"
 "TESTTTTT CACA3
+bbta
